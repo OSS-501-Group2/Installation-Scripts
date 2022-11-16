@@ -5,5 +5,6 @@ yum groupinstall -y "Development Tools"
 yum install -y readline-devel
 
 git clone https://github.com/dvorka/hstr.git
+cd hstr
 cd ./build/tarball && ./tarball-automake.sh && cd ../..
 ./configure && make && make install
